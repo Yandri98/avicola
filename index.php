@@ -17,14 +17,14 @@ if (!empty($_SESSION['active'])) {
             //$clave = $_POST['clave'];
             /*$user = mysqli_real_escape_string($conexion, $_POST['usuario']);
             $clave = md5(mysqli_real_escape_string($conexion, $_POST['clave']));*/
-            $query = mysqli_query($conexion, "SELECT * FROM EMPLEADOS WHERE USUARIO = '$user' AND contrasena = '$clave' AND estado = 1");
+            $query = mysqli_query($conexion, "SELECT * FROM empleados WHERE USUARIO = '$user' AND contrasena = '$clave' AND estado = 1");
             mysqli_close($conexion);
             $resultado = mysqli_num_rows($query);
             if ($resultado > 0) {
                 $dato = mysqli_fetch_array($query);
                 $_SESSION['active'] = true;
                 $_SESSION['idUser'] = $dato['ID_EMPLEADO'];
-                $_SESSION['nombre'] = $dato['NOMBRES_EMPLEADO'];
+                $_SESSION['nombre'] = $dato['NOMBRE_EMPLEADO'];
                 $_SESSION['user'] = $dato['USUARIO'];
                 header('location: src/');
             } else {
