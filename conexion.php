@@ -4,7 +4,7 @@
     $clave = "sgBEZxD9yycfrbzim13P";
     $bd = "bcbsqv4uvaqhdam2fmyh";
     $puerto="3306";
-     $URI="mysql://u4o7vfltkahynl85:sgBEZxD9yycfrbzim13P@bcbsqv4uvaqhdam2fmyh-my";
+     $URI="mysql://u4o7vfltkahynl85:sgBEZxD9yycfrbzim13P@bcbsqv4uvaqhdam2fmyh-my;
     $conexion = mysqli_connect($host,$user,$clave,$bd,$puerto, $URI);
     if (mysqli_connect_errno()){
         echo "No se pudo conectar a la base de datos";
