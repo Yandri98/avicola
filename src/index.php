@@ -1,12 +1,12 @@
 <?php include_once "includes/header.php";
 require "../conexion.php";
-$usuarios = mysqli_query($conexion, "SELECT * FROM EMPLEADOS");
+$usuarios = mysqli_query($conexion, "SELECT * FROM empleados");
 $totalU= mysqli_num_rows($usuarios);
-$clientes = mysqli_query($conexion, "SELECT * FROM CLIENTES");
+$clientes = mysqli_query($conexion, "SELECT * FROM clientes");
 $totalC = mysqli_num_rows($clientes);
-$productos = mysqli_query($conexion, "SELECT * FROM PRODUCTOS");
+$productos = mysqli_query($conexion, "SELECT * FROM productos");
 $totalP = mysqli_num_rows($productos);
-$ventas = mysqli_query($conexion, "SELECT * FROM VENTA");
+$ventas = mysqli_query($conexion, "SELECT * FROM venta");
 $totalV = mysqli_num_rows($ventas);
 ?>
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
