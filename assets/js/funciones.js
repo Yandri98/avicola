@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         minLength: 3,
         source: function (request, response) {
             $.ajax({
-                url: "../../src/ajax.php",
+                url: "ajax.php",
                 dataType: "json",
                 data: {
                     q: request.term
