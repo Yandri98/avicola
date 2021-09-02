@@ -47,8 +47,8 @@ if (!empty($_SESSION['active'])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Iniciar Sessión</title>
-    <link href="Assets/css/styles.css" rel="stylesheet" />
-    <script src="Assets/js/all.min.js" crossorigin="anonymous"></script>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <script src="assets/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-primary">
@@ -103,9 +103,9 @@ if (!empty($_SESSION['active'])) {
             </footer>
         </div>
     </div>
-    <script src="Assets/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <script src="Assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="Assets/js/scripts.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
