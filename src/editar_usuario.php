@@ -36,7 +36,7 @@ if (empty($_REQUEST['id'])) {
     header("Location: usuarios.php");
 }
 $idusuario = $_REQUEST['id'];
-$sql = mysqli_query($conexion, "SELECT * FROM empleados WHERE ID_EMPLEADO = $id_usuario");
+$sql = mysqli_query($conexion, "SELECT * FROM empleados WHERE ID_EMPLEADO = $idUser");
 $result_sql = mysqli_num_rows($sql);
 if ($result_sql == 0) {
     header("Location: usuarios.php");
