@@ -104,6 +104,6 @@ if (empty($existe) && $id_user != 1) {
     <div class="col-md-6">
         <a href="#" class="btn btn-primary" id="btn_generar"><i class="fas fa-save"></i> Generar Venta</a>
     </div>
-<script src="../assets/js/funciones.js"></script>
+
 </div>
 <?php include_once "includes/footer.php"; ?>
